@@ -3,200 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume of Precious Edmund, Cloud Engineer with 5+ years experience">
     <title>Precious Edmund - Cloud Engineer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<script>
-  const darkModeToggle = document.createElement('button');
-  darkModeToggle.innerHTML = '🌙 Dark Mode';
-  darkModeToggle.className = 'btn btn-sm btn-outline-secondary position-fixed bottom-0 end-0 m-3';
-  darkModeToggle.onclick = function() {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    this.innerHTML = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
-  };
-  document.body.appendChild(darkModeToggle);
-
-  // Load saved preference
-  if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-    darkModeToggle.innerHTML = '☀️ Light Mode';
-  }
-</script>
 <body>
     <div class="container my-5">
+        <!-- Header Section -->
         <header class="text-center mb-5">
             <h1 class="display-4">Precious Edmund</h1>
             <h2 class="text-muted">Cloud Engineer</h2>
             <div class="contact-info mt-3">
-                <p>08148551915 | precious.edmund23@gmail.com | Lagos, Lagos 100278</p>
+                <p>
+                    <i class="fas fa-phone me-2"></i>08148551915 | 
+                    <i class="fas fa-envelope me-2"></i>precious.edmund23@gmail.com | 
+                    <i class="fas fa-map-marker-alt me-2"></i>Lagos, Lagos 100278
+                </p>
             </div>
+            <a href="https://tinyurl.com/2t4hhdj4" class="btn btn-primary btn-lg mt-2" download>
+                <i class="fas fa-download me-2"></i>Download Full Resume (PDF)
+            </a>
         </header>
 
-        <section class="mb-5">
-            <h3 class="border-bottom pb-2">PROFESSIONAL SUMMARY</h3>
-            <p>Cloud Administrator with 5+ years of experience managing multi-cloud infrastructure, Kubernetes, and Terraform, with a focus on automation, reliability, and technical support.</p>
-        </section>
+        <!-- Main Content Sections -->
+        <main>
+            <!-- Professional Summary -->
+            <section class="mb-5">
+                <h2 class="border-bottom pb-2">PROFESSIONAL SUMMARY</h2>
+                <p class="lead">Cloud Administrator with 5+ years of experience managing multi-cloud infrastructure, Kubernetes, and Terraform, with a focus on automation, reliability, and technical support.</p>
+            </section>
 
-        <section class="mb-5">
-            <h3 class="border-bottom pb-2">SKILLS</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul>
-                        <li>Infrastructure Support & Site Reliability</li>
-                        <li>Multi-Cloud (AWS, GCP, Azure) Operations</li>
-                        <li>Helm Charts & Kubernetes Troubleshooting</li>
-                        <li>Terraform (IaC) Management</li>
-                        <li>Python Scripting (Debugging & Collaboration)</li>
-                    </ul>
+            <!-- Skills -->
+            <section class="mb-5">
+                <h2 class="border-bottom pb-2">SKILLS</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Infrastructure Support & Site Reliability</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Multi-Cloud (AWS, GCP, Azure) Operations</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Helm Charts & Kubernetes Troubleshooting</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Terraform (IaC) Management</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Python Scripting (Debugging & Collaboration)</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>API Interaction (Postman, curl)</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Observability & Monitoring (Datadog, New Relic, Dynatrace)</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Customer Support Tools (Zendesk, Jira Service Management)</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>DevOps Principles & Platform Engineering</li>
+                            <li><i class="fas fa-check-circle text-primary me-2"></i>Containerization (Docker, Kubernetes)</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li>API Interaction (Postman, curl)</li>
-                        <li>Observability & Monitoring (Datadog, New Relic, Dynatrace)</li>
-                        <li>Customer Support Tools (Zendesk, Jira Service Management, Connectwise)</li>
-                        <li>DevOps Principles & Platform Engineering</li>
-                        <li>Containerization Concepts (Docker, Kubernetes)</li>
+            </section>
+
+            <!-- Experience -->
+            <section class="mb-5">
+                <h2 class="border-bottom pb-2">EXPERIENCE</h2>
+                
+                <article class="mb-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>CLOUD ADMINISTRATOR</h3>
+                        <span class="badge bg-primary">Systemverse LLC</span>
+                    </div>
+                    <ul class="mt-3">
+                        <li>Provided Tier 2/Tier 3 support for cloud infrastructure issues across AWS, GCP, and Azure</li>
+                        <li>Defined, deployed, and managed cloud resources via Terraform</li>
+                        <li>Supported Kubernetes clusters by troubleshooting pod failures and networking issues</li>
+                        <li>Collaborated with developers to debug Python scripts and logs</li>
+                        <li>Monitored system performance using Datadog and New Relic</li>
                     </ul>
+                </article>
+                
+                <article class="mb-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>DEVOPS SUPPORT ENGINEER</h3>
+                        <span class="badge bg-primary">Systemverse LLC</span>
+                    </div>
+                    <ul class="mt-3">
+                        <li>Provided support to platform engineering and SRE teams</li>
+                        <li>Assisted in creation and maintenance of Terraform modules</li>
+                        <li>Investigated and resolved customer-reported issues via Jira</li>
+                        <li>Supported Kubernetes environments troubleshooting</li>
+                        <li>Analyzed system logs and metrics through Dynatrace</li>
+                    </ul>
+                </article>
+                
+                <article class="mb-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3>CLOUD SUPPORT ENGINEER [AZURE]</h3>
+                        <span class="badge bg-primary">Tel: Experts</span>
+                    </div>
+                    <ul class="mt-3">
+                        <li>Managed and resolved escalated Azure cloud incidents</li>
+                        <li>Provided expert-level support for Azure services</li>
+                        <li>Troubleshooted complex Azure environment issues</li>
+                        <li>Optimized Azure infrastructure for performance</li>
+                        <li>Automated deployments using Terraform and ARM templates</li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- Projects -->
+            <section class="mb-5">
+                <h2 class="border-bottom pb-2">NOTABLE PROJECTS</h2>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Multi-Cloud Automation Framework</h5>
+                                <p class="card-text">Developed a Terraform-based framework for deploying identical infrastructure across AWS, Azure, and GCP with 90% code reuse.</p>
+                                <div>
+                                    <span class="badge bg-primary me-1">Terraform</span>
+                                    <span class="badge bg-secondary">Multi-Cloud</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Kubernetes Monitoring Dashboard</h5>
+                                <p class="card-text">Created a custom Datadog dashboard for cluster health monitoring that reduced incident detection time by 40%.</p>
+                                <div>
+                                    <span class="badge bg-primary me-1">Kubernetes</span>
+                                    <span class="badge bg-secondary">Datadog</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="mb-5">
-            <h3 class="border-bottom pb-2">EXPERIENCE</h3>
-            
-            <div class="mb-4">
-                <h4>CLOUD ADMINISTRATOR</h4>
-                <h5>Systemverse LLC</h5>
-                <ul>
-                    <li>Provided Tier 2/Tier 3 support for cloud infrastructure issues across AWS, GCP, and Azure, resolving incidents with a focus on uptime and performance.</li>
-                    <li>Defined, deployed, and managed cloud resources via Terraform, ensuring scalable and secure infrastructure.</li>
-                    <li>Supported Kubernetes clusters by troubleshooting pod failures, deployment errors, and networking issues, using Helm charts for application management.</li>
-                    <li>Collaborated with developers to debug Python scripts and logs related to application performance.</li>
-                    <li>Monitored system performance and diagnosed bottlenecks using Datadog and New Relic, contributing to faster incident resolution.</li>
-                    <li>Interacted with REST APIs for integrations and troubleshooting using Postman and curl.</li>
-                    <li>Documented technical solutions and playbooks to enhance team knowledge sharing and reduce resolution times.</li>
-                </ul>
-            </div>
-            
-            <div class="mb-4">
-                <h4>DEVOPS SUPPORT ENGINEER</h4>
-                <h5>Systemverse LLC</h5>
-                <ul>
-                    <li>Provided support to platform engineering and SRE teams by managing multi-cloud environments and deployments.</li>
-                    <li>Assisted in the creation and maintenance of Terraform modules for infrastructure provisioning.</li>
-                    <li>Investigated and resolved customer-reported issues via Jira Service Management, improving first response times.</li>
-                    <li>Supported Kubernetes environments by troubleshooting deployment rollouts, scaling issues, and service configurations.</li>
-                    <li>Analyzed system logs and metrics through Dynatrace to proactively identify service degradations.</li>
-                    <li>Created and maintained internal documentation covering common troubleshooting workflows and escalation processes.</li>
-                </ul>
-            </div>
-            
-            <div class="mb-4">
-                <h4>CLOUD SUPPORT ENGINEER [AZURE]</h4>
-                <h5>Tel: Experts</h5>
-                <ul>
-                    <li>Managed and resolved escalated Azure cloud incidents, minimizing downtime and ensuring business continuity.</li>
-                    <li>Provided expert-level support for Azure services including Virtual Machines, Azure Kubernetes Service (AKS), and Azure Networking.</li>
-                    <li>Troubleshooted complex Azure environment issues, identifying root causes and implementing effective solutions.</li>
-                    <li>Collaborated with development and operations teams to optimize Azure infrastructure for performance and cost efficiency.</li>
-                    <li>Developed and maintained comprehensive documentation for Azure troubleshooting procedures and best practices.</li>
-                    <li>Automated Azure infrastructure deployments and configurations using Infrastructure as Code (IaC) tools such as Terraform and Azure Resource Manager (ARM) templates.</li>
-                </ul>
-            </div>
-        </section>
-<section class="mb-5">
-  <h3 class="border-bottom pb-2">NOTABLE PROJECTS</h3>
-  
-  <div class="card mb-3">
-    <div class="card-body">
-      <h5 class="card-title">Multi-Cloud Automation Framework</h5>
-      <p class="card-text">Developed a Terraform-based framework for deploying identical infrastructure across AWS, Azure, and GCP with 90% code reuse.</p>
-      <span class="badge bg-primary">Terraform</span>
-      <span class="badge bg-secondary">Multi-Cloud</span>
-    </div>
-  </div>
-  
-  <div class="card mb-3">
-    <div class="card-body">
-      <h5 class="card-title">Kubernetes Monitoring Dashboard</h5>
-      <p class="card-text">Created a custom Datadog dashboard for cluster health monitoring that reduced incident detection time by 40%.</p>
-      <span class="badge bg-primary">Kubernetes</span>
-      <span class="badge bg-secondary">Datadog</span>
-    </div>
-  </div>
-</section>
-        <section class="mb-5">
-            <h3 class="border-bottom pb-2">EDUCATION</h3>
-            <div class="mb-3">
-                <h4>B.TECH ELECTRICAL ELECTRONICS ENGINEERING</h4>
-                <p>The Federal University of Technology Oye-Ekiti</p>
-                <p>Nov 2023</p>
-            </div>
-            <div>
-                <h4>HIGHER NATIONAL DIPLOMA [HND] ELECTRICAL ELECTRONICS ENGINEERING</h4>
-                <p>The Polytechnic Ibadan</p>
-                <p>Sep 2017</p>
-            </div>
-        </section>
-    </div><section class="mb-5">
-  <h3 class="border-bottom pb-2">CERTIFICATIONS</h3>
-  <ul>
-    <li><strong>Certified Kubernetes Administrator (CKA)</strong> - Cloud Native Computing Foundation (2023)</li>
-    <li><strong>AWS Certified Solutions Architect - Associate</strong> (2022)</li>
-    <li><strong>Microsoft Certified: Azure Administrator Associate</strong> (2021)</li>
-  </ul>
-</section>
-<section class="mb-5">
-  <h3 class="border-bottom pb-2">CONTACT ME</h3>
-  <form id="contactForm" class="needs-validation" novalidate>
-    <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" required>
-    </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" required>
-    </div>
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" rows="3" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-  </form>
-</section>
+            <!-- Education -->
+            <section class="mb-5">
+                <h2 class="border-bottom pb-2">EDUCATION</h2>
+                <article class="mb-3">
+                    <h3>B.TECH ELECTRICAL ELECTRONICS ENGINEERING</h3>
+                    <p class="mb-1">The Federal University of Technology Oye-Ekiti</p>
+                    <p class="text-muted">Nov 2023</p>
+                </article>
+                <article>
+                    <h3>HIGHER NATIONAL DIPLOMA [HND] ELECTRICAL ELECTRONICS ENGINEERING</h3>
+                    <p class="mb-1">The Polytechnic Ibadan</p>
+                    <p class="text-muted">Sep 2017</p>
+                </article>
+            </section>
 
-<script>
-  // Simple form handling
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (this.checkValidity()) {
-      alert('Thank you for your message! I will get back to you soon.');
-      this.reset();
-    }
-    this.classList.add('was-validated');
-  });
-</script>
+            <!-- Certifications -->
+            <section class="mb-5">
+                <h2 class="border-bottom pb-2">CERTIFICATIONS</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="fas fa-certificate text-warning me-2"></i>
+                        <strong>Certified Kubernetes Administrator (CKA)</strong> - Cloud Native Computing Foundation (2023)
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-certificate text-warning me-2"></i>
+                        <strong>AWS Certified Solutions Architect - Associate</strong> (2022)
+                    </li>
+                    <li class="mb-2">
+                        <i class="fas fa-certificate text-warning me-2"></i>
+                        <strong>Microsoft Certified: Azure Administrator Associate</strong> (2021)
+                    </li>
+                </ul>
+            </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-	    <div class="text-center my-4">
-  <a href="https://tinyurl.com/2t4hhdj4" class="btn btn-primary btn-lg" download>
-    <i class="fas fa-download me-2"></i>Download Full Resume (PDF)
-  </a>
-</div>
-	    <div class="social-links mt-2">
-  <a href="https://linkedin.com/in/precious-edmund" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/precious-edmund" class="text-white mx-2"><i class="fab fa-github"></i></a>
-  <a href="https://twitter.com/precious_edmund" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
-</div>
-        <div class="container">
-            <p>© 2023 Precious Edmund - Cloud Engineer</p>
-            <p>Contact: precious.edmund23@gmail.com | 08148551915</p>
+            <!-- Contact Form -->
+            <section class="mb-5">
+                <h2 class="border-bottom pb-2">CONTACT ME</h2>
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="social-links mb-3">
+                <a href="https://linkedin.com/in/precious-edmund" class="text-white mx-2 fs-4" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/precious-edmund" class="text-white mx-2 fs-4" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/precious_edmund" class="text-white mx-2 fs-4" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="mb-1">© 2023 Precious Edmund - Cloud Engineer</p>
+            <p class="mb-0">Contact: precious.edmund23@gmail.com | 08148551915</p>
         </div>
     </footer>
 
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="btn btn-sm btn-outline-secondary position-fixed bottom-0 end-0 m-3">
+        <i class="fas fa-moon me-1"></i>Dark Mode
+    </button>
+
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        function setDarkMode(isDark) {
+            document.body.classList.toggle('dark-mode', isDark);
+            localStorage.setItem('darkMode', isDark);
+            darkModeToggle.innerHTML = isDark 
+                ? '<i class="fas fa-sun me-1"></i>Light Mode' 
+                : '<i class="fas fa-moon me-1"></i>Dark Mode';
+        }
+        
+        // Initialize from localStorage or system preference
+        const savedMode = localStorage.getItem('darkMode');
+        if (savedMode === 'true' || (savedMode === null && darkModeMediaQuery.matches)) {
+            setDarkMode(true);
+        }
+        
+        // Toggle button
+        darkModeToggle.addEventListener('click', () => {
+            setDarkMode(!document.body.classList.contains('dark-mode'));
+        });
+        
+        // Watch for system preference changes
+        darkModeMediaQuery.addEventListener('change', (e) => {
+            if (localStorage.getItem('darkMode') === null) {
+                setDarkMode(e.matches);
+            }
+        });
+        
+        // Form Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (this.checkValidity()) {
+                alert('Thank you for your message! I will get back to you soon.');
+                this.reset();
+                this.classList.remove('was-validated');
+            } else {
+                this.classList.add('was-validated');
+            }
+        });
+    </script>
 </body>
 </html>
